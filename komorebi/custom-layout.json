@@ -1,0 +1,12 @@
+[
+  {
+    "column": "Tertiary",
+    "configuration": "Horizontal"
+  },
+  {
+    "column": "Primary"
+  },
+  {
+    "column": "Secondary"
+  }
+]
