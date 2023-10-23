@@ -6,6 +6,12 @@
   return
 }
 
+; Open Terminal (Powershell)
+#+Enter:: {
+  Run "C:\Program Files\PowerShell\7\pwsh.exe"
+  return
+}
+
 
 ; Open Browser app
 #b::{
