@@ -3,7 +3,6 @@
 
 ; Start komorebi manually (if autostart failes)
 #s::{
-  RunWait("komorebic start -c $Env:USERPROFILE\.config\komorebi\komorebi.json", , "Hide")
   RunWait("komorebic load-custom-layout $Env:USERPROFILE\.config\komorebi\custom-layout.json", , "Hide")
   return
 }
