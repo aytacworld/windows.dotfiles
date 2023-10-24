@@ -2,16 +2,21 @@
 
 ; Open Terminal (WSL2 Ubuntu on Windows Terminal)
 #Enter::{
-  Run "ubuntu.exe"
+  Run "wt"
   return
 }
 
 ; Open Terminal (Powershell)
 #+Enter:: {
-  Run "C:\Program Files\PowerShell\7\pwsh.exe"
+  Run "wt C:\Program Files\PowerShell\7\pwsh.exe"
   return
 }
 
+; Open Terminal (CMD)
+#^Enter:: {
+  Run "wt C:\Windows\System32\cmd.exe"
+  return
+}
 
 ; Open Browser app
 #b::{

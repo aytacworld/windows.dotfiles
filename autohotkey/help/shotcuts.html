@@ -23,7 +23,7 @@
       }
       td:first-of-type {
         display: flex;
-        justify-content: center;
+        /*justify-content: center;*/
         align-items: center;
         min-width: 10em;
       }
@@ -42,6 +42,12 @@
       }
       .alt {
         background-image: url(./alt.png);
+      }
+      .ctrl {
+        background-image: url(./ctrl.png);
+      }
+      .enter {
+        background-image: url(./enter.png);
       }
     </style>
   </head>
@@ -65,14 +71,20 @@
       </tr>
 
       <tr>
-        <td><i class="start"></i> + Enter</td>
+        <td><i class="start"></i> + <i class="enter"></i></td>
         <td>Open Terminal</td>
         <td>WSL2 Linux using Windows Terminal App</td>
       </tr>
 
       <tr>
-        <td><i class="start"></i> + <i class="shift"></i> + Enter</td>
+        <td><i class="start"></i> + <i class="shift"></i> + <i class="enter"></i></td>
         <td>Open Powershell</td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td><i class="start"></i> + <i class="ctrl"></i> + <i class="enter"></i></td>
+        <td>Open Command Prompt</td>
         <td></td>
       </tr>
 
