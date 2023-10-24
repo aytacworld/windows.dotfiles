@@ -20,24 +20,24 @@
 
 ; Open Browser app
 #b::{
-  Run "chrome.exe -homepage `"about:blank`""
+  Run "chrome.exe /new-window `"about:blank`""
   return
 }
 
 ; Open Browser app (Incognito)
 #+b::{
-  Run "chrome.exe -homepage `"about:blank`" -incognito"
+  Run "chrome.exe /new-window `"about:blank`" -incognito"
   return
 }
 
 ; Open Invidious webpage  (Incognito)
 #+y::{
-  Run "chrome.exe -homepage `"https://inv.tux.pizza/`" -incognito"
+  Run "chrome.exe /new-window `"https://inv.tux.pizza/`" -incognito"
   return
 }
 
 ; Open Qmusic webpage  (Incognito)
 #+u::{
-  Run "chrome.exe -homepage `"https://qmusic.be/luister/qmusic_be`" -incognito"
+  Run "chrome.exe /new-window `"https://qmusic.be/luister/qmusic_be`" -incognito"
   return
 }
