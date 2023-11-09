@@ -155,6 +155,14 @@
   RunWait("komorebic focus-workspace 2", , "Hide")
   return
 }
+!4::{
+  RunWait("komorebic focus-workspace 3", , "Hide")
+  return
+}
+!5::{
+  RunWait("komorebic focus-workspace 4", , "Hide")
+  return
+}
 
 ; Move windows across workspaces
 !+1::{
@@ -167,5 +175,13 @@
 }
 !+3::{
   RunWait("komorebic move-to-workspace 2", , "Hide")
+  return
+}
+!+4::{
+  RunWait("komorebic move-to-workspace 3", , "Hide")
+  return
+}
+!+5::{
+  RunWait("komorebic move-to-workspace 4", , "Hide")
   return
 }
