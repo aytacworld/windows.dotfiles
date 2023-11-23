@@ -65,22 +65,22 @@
 }
 
 ; Stack windows
-!left::{
-  RunWait("komorebic stack left", , "Hide")
-  return
-}
-!down::{
-  RunWait("komorebic stack down", , "Hide")
-  return
-}
-!up::{
-  RunWait("komorebic stack up", , "Hide")
-  return
-}
-!right::{
-  RunWait("komorebic stack right", , "Hide")
-  return
-}
+;!left::{
+;  RunWait("komorebic stack left", , "Hide")
+;  return
+;}
+;!down::{
+;  RunWait("komorebic stack down", , "Hide")
+;  return
+;}
+;!up::{
+;  RunWait("komorebic stack up", , "Hide")
+;  return
+;}
+;!right::{
+;  RunWait("komorebic stack right", , "Hide")
+;  return
+;}
 !;::{
   RunWait("komorebic unstack", , "Hide")
   return
