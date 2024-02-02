@@ -163,6 +163,26 @@
   RunWait("komorebic focus-workspace 4", , "Hide")
   return
 }
+!6::{
+  RunWait("komorebic focus-workspace 5", , "Hide")
+  return
+}
+!7::{
+  RunWait("komorebic focus-workspace 6", , "Hide")
+  return
+}
+!8::{
+  RunWait("komorebic focus-workspace 7", , "Hide")
+  return
+}
+!9::{
+  RunWait("komorebic focus-workspace 8", , "Hide")
+  return
+}
+!0::{
+  RunWait("komorebic focus-workspace 9", , "Hide")
+  return
+}
 
 ; Move windows across workspaces
 !+1::{
@@ -183,5 +203,25 @@
 }
 !+5::{
   RunWait("komorebic move-to-workspace 4", , "Hide")
+  return
+}
+!+6::{
+  RunWait("komorebic move-to-workspace 5", , "Hide")
+  return
+}
+!+7::{
+  RunWait("komorebic move-to-workspace 6", , "Hide")
+  return
+}
+!+8::{
+  RunWait("komorebic move-to-workspace 7", , "Hide")
+  return
+}
+!+9::{
+  RunWait("komorebic move-to-workspace 8", , "Hide")
+  return
+}
+!+0::{
+  RunWait("komorebic move-to-workspace 9", , "Hide")
   return
 }
