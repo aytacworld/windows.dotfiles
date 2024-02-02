@@ -27,7 +27,7 @@ bars:
     widgets:
       left:   ["komorebi_workspaces", "active_window"]
       center: ["clock"]
-      right:  ["ip_info", "wifi", "cpu", "memory", "battery"]
+      right:  ["ip_info", "wifi", "cpu", "battery"]
 
 widgets:
   active_window:
