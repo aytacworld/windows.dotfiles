@@ -1,9 +1,10 @@
 #Requires AutoHotkey v2.0
 ; KOMOREBI Specific hotkeys
+; ^ ctrl, ! alt, + shift, # win
 
 ; Start komorebi manually (if autostart failes)
-#s::{
-  RunWait("komorebic load-custom-layout $Env:USERPROFILE\.config\komorebi\custom-layout.json", , "Hide")
+!s::{
+  RunWait("komorebic load-custom-layout C:\Users\AAytac\.config\komorebi\custom-layout.json", , "Hide")
   return
 }
 
