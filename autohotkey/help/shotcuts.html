@@ -8,6 +8,9 @@
       body {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
       }
+      table {
+          width: 100%;
+      }
       table,
       th,
       td {
@@ -17,15 +20,10 @@
       td,
       th {
         padding: 5px;
+        width: 33%;
       }
       tr:nth-child(even) {
         background-color: #E4F4FF;
-      }
-      td:first-of-type {
-        display: flex;
-        /*justify-content: center;*/
-        align-items: center;
-        min-width: 10em;
       }
 
       i {
@@ -33,6 +31,7 @@
         width: 24px;
         height: 24px;
         background-size: cover;
+        margin-bottom: -6px;
       }
       .start {
         background-image: url(./win.png);
@@ -59,8 +58,45 @@
     </p>
     <p>Version 2 script is uses</p>
 
+    <h2>Global</h2>
     <p>
-      Location of file: $HOME/.config/autohotkey/custom-hotkeys.ahk
+      Location of file: $HOME/.config/autohotkey/global.ahk
+    </p>
+
+    <table>
+        <tr>
+            <th>Command</th>
+            <th>Execution</th>
+            <th>Remarks</th>
+        </tr>
+        <tr>
+            <td><i class="start"></i> + q</td>
+            <td>Close current app</td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td><i class="start"></i> + f</td>
+            <td>Toggle current app fullscreen</td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td><i class="start"></i> + o</td>
+            <td>Open Select Area to Crop screenshot</td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td><i class="start"></i> + h</td>
+            <td>Open This help page</td>
+            <td></td>
+        </tr>
+    </table>
+
+    <h2>Apps</h2>
+    <p>
+      Location of file: $HOME/.config/autohotkey/apps.ahk
     </p>
 
     <table>
@@ -89,24 +125,6 @@
       </tr>
 
       <tr>
-        <td><i class="start"></i> + q</td>
-        <td>Close current app</td>
-        <td></td>
-      </tr>
-
-      <tr>
-        <td><i class="start"></i> + f</td>
-        <td>Toggle current app fullscreen</td>
-        <td></td>
-      </tr>
-
-      <tr>
-        <td><i class="start"></i> + o</td>
-        <td>Open Select Area to Crop screenshot</td>
-        <td></td>
-      </tr>
-
-      <tr>
         <td><i class="start"></i> + b</td>
         <td>Open Browser</td>
         <td>Chrome</td>
@@ -129,52 +147,137 @@
         <td>Open QMusic in Browser</td>
         <td>Chrome (Incognito), https://qmusic.be/luister/qmusic_be</td>
       </tr>
-
-      <!-- <tr>
-        <td><i class="start"></i> + m</td>
-        <td>Open Main</td>
-        <td>Outlook</td>
-      </tr>
-
-      <tr>
-        <td><i class="start"></i> + c</td>
-        <td>Open Editor</td>
-        <td>VS Code</td>
-      </tr>
-
-      <tr>
-        <td><i class="start"></i> + s</td>
-        <td>Open Slack</td>
-        <td></td>
-      </tr>
-
-      <tr>
-        <td><i class="start"></i> + t</td>
-        <td>Open Teams</td>
-        <td></td>
-      </tr> -->
-
-      <tr>
-        <td><i class="start"></i> + h</td>
-        <td>Open This help page</td>
-        <td></td>
-      </tr>
     </table>
 
     <h2>Komorebi (window tiling manager)</h2>
+    <p>
+      Location of file: $HOME/.config/autohotkey/komorebi.ahk
+    </p>
 
     <table>
-      <tr>
-        <th>Command</th>
-        <th>Execution</th>
-        <th>Remarks</th>
-      </tr>
+        <tr>
+            <th>Command</th>
+            <th>Execution</th>
+            <th>Remarks</th>
+        </tr>
 
-      <tr>
-        <td><i class="alt"></i> + h</td>
-        <td>Focus on application left</td>
-        <td></td>
-      </tr>
+        <tr><th colspan="3">Generic</th></tr>
+        <tr>
+            <td><i class="alt"></i> + s</td>
+            <td>apply custom-layout</td>
+            <td>resizing doesn't work on custom layout</td>
+        </tr>
+        <tr>
+            <td><i class="alt"></i> + <i class="shift"></i> + o</td>
+            <td>Reload komorebi</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><i class="alt"></i> + <i class="shift"></i> + r</td>
+            <td>Retile</td>
+            <td>Use this when tiling of the windows isn't working as expected</td>
+        </tr>
+        <tr>
+            <td><i class="alt"></i> + p</td>
+            <td>Pause/Resume komorebi</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><i class="alt"></i> + t</td>
+            <td>Toggle float</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><i class="alt"></i> + <i class="shift"></i> + f</td>
+            <td>Toggle monocle</td>
+            <td>Same as fullscreen, but via komorebi</td>
+        </tr>
+
+        <tr><th colspan="3">Focus</th></tr>
+        <tr>
+            <td><i class="alt"></i> + h</td>
+            <td>Focus on application left</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><i class="alt"></i> + j</td>
+            <td>Focus on application down</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><i class="alt"></i> + k</td>
+            <td>Focus on application up</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><i class="alt"></i> + l</td>
+            <td>Focus on application right</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><i class="alt"></i> + 1 ... 0</td>
+            <td>Focus on workspace 1 ... 0</td>
+            <td>1 ... 0 means 1, 2, 3, ... 8, 9, 0. 0 being 10</td>
+        </tr>
+
+        <tr><th colspan="3">Move</th></tr>
+        <tr>
+            <td><i class="alt"></i> + <i class="shift"></i> + h</td>
+            <td>Move focused application to left</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><i class="alt"></i> + <i class="shift"></i> + j</td>
+            <td>Move focused application to down</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><i class="alt"></i> + <i class="shift"></i> + k</td>
+            <td>Move focused application to up</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><i class="alt"></i> + <i class="shift"></i> + l</td>
+            <td>Move focused application to right</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><i class="alt"></i> + <i class="shift"></i> + 1 ... 0</td>
+            <td>Move focused application to workspace 1 ... 0</td>
+            <td>1 ... 0 means 1, 2, 3, ... 8, 9, 0. 0 being 10</td>
+        </tr>
+        <tr>
+            <td><i class="alt"></i> + x</td>
+            <td>Flip windows horizontaly</td>
+            <td>Doesn't work on custom layouts</td>
+        </tr>
+        <tr>
+            <td><i class="alt"></i> + y</td>
+            <td>Flip windows verticaly</td>
+            <td>Doesn't work on custom layouts</td>
+        </tr>
+
+        <tr><th colspan="3">Resize</th></tr>
+        <tr>
+            <td><i class="alt"></i> + <i class="ctrl"></i> + h</td>
+            <td>Resize horizontaly, decrease</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><i class="alt"></i> + <i class="ctrl"></i> + j</td>
+            <td>Resize verticaly, increase</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><i class="alt"></i> + <i class="ctrl"></i> + k</td>
+            <td>Resize verticaly, decrease</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><i class="alt"></i> + <i class="ctrl"></i> + l</td>
+            <td>Resize horizontal, increase</td>
+            <td></td>
+        </tr>
     </table>
   </body>
 </html>

@@ -1,4 +1,5 @@
 #Requires AutoHotkey v2.
+; ^ ctrl, ! alt, + shift, # win
 
 ; Open Terminal (WSL2 Ubuntu on Windows Terminal)
 #Enter::{

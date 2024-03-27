@@ -1,4 +1,5 @@
 ﻿#Requires AutoHotkey v2.0
+; ^ ctrl, ! alt, + shift, # win
 
 ; Open current active app
 #q::{

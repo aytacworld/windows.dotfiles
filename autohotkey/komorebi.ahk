@@ -8,11 +8,6 @@
   return
 }
 
-; Reload whkd configuration
-!o::{
-  RunWait("taskkill /f /im whkd.exe && Start-Process whkd -WindowStyle hidden", , "Hide")
-  return
-}
 !+o::{
   RunWait("komorebic reload-configuration", , "Hide")
   return
@@ -34,14 +29,6 @@
   RunWait("komorebic focus right", , "Hide")
   return
 }
-!+[::{
-  RunWait("komorebic cycle-focus previous # oem_4 is [", , "Hide")
-  return
-}
-!+]::{
-  RunWait("komorebic cycle-focus next # oem_6 is ]", , "Hide")
-  return
-}
 
 ; Move windows
 !+h::{
@@ -60,55 +47,21 @@
   RunWait("komorebic move right", , "Hide")
   return
 }
-!+Enter::{
-  RunWait("komorebic promote", , "Hide")
-  return
-}
-
-; Stack windows
-;!left::{
-;  RunWait("komorebic stack left", , "Hide")
-;  return
-;}
-;!down::{
-;  RunWait("komorebic stack down", , "Hide")
-;  return
-;}
-;!up::{
-;  RunWait("komorebic stack up", , "Hide")
-;  return
-;}
-;!right::{
-;  RunWait("komorebic stack right", , "Hide")
-;  return
-;}
-!;::{
-  RunWait("komorebic unstack", , "Hide")
-  return
-}
-![::{
-  RunWait("komorebic cycle-stack previous # oem_4 is [", , "Hide")
-  return
-}
-!]::{
-  RunWait("komorebic cycle-stack next # oem_6 is ]", , "Hide")
-  return
-}
 
 ; Resize
-!=::{
+!^l::{
   RunWait("komorebic resize-axis horizontal increase", , "Hide")
   return
 }
-!-::{
+!^h::{
   RunWait("komorebic resize-axis horizontal decrease", , "Hide")
   return
 }
-!+=::{
+!^j::{
   RunWait("komorebic resize-axis vertical increase", , "Hide")
   return
 }
-!+-::{
+!^k::{
   RunWait("komorebic resize-axis vertical decrease", , "Hide")
   return
 }
