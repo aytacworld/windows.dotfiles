@@ -4,6 +4,6 @@
 ; Global keys (mod$+key)
 #Include global.ahk
 ; komorebi window tiling manager (alt+key)
-#Include komorebi.ahk
+; #Include komorebi.ahk
 ; Apps
 #Include apps.ahk
