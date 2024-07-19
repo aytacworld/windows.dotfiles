@@ -87,6 +87,7 @@ workspaces:
   - name: "7"
   - name: "8"
   - name: "9"
+  - name: "10"
 
 window_rules:
   # Task Manager requires admin privileges to manage and should be ignored unless running
@@ -179,16 +180,18 @@ keybindings:
     binding: "Alt+Shift+Space"
 
   # Change the focused window to be maximized / unmaximized.
-  - command: "toggle maximized"
-    binding: "Alt+X"
+  # handled by autohotkey start+f
+  # - command: "toggle maximized"
+  #   binding: "Alt+X"
 
   # Minimize focused window.
   - command: "set minimized"
     binding: "Alt+M"
 
   # Close focused window.
-  - command: "close"
-    binding: "Alt+Shift+Q"
+  # handled by autohotkey start+q
+  # - command: "close"
+  #   binding: "Alt+Shift+Q"
 
   # Kill GlazeWM process safely.
   - command: "exit wm"
@@ -200,8 +203,9 @@ keybindings:
 
   # Launch CMD terminal (alternatively `exec wt` or `exec %ProgramFiles%/Git/git-bash.exe`
   # to start Windows Terminal and Git Bash respectively.
-  - command: "exec cmd"
-    binding: "Alt+Enter"
+  # handled by autohotkey start+ctrl+enter
+  # - command: "exec cmd"
+  #   binding: "Alt+Enter"
 
   # Focus the workspace that last had focus.
   - command: "focus workspace recent"
@@ -232,6 +236,8 @@ keybindings:
     binding: "Alt+8"
   - command: "focus workspace 9"
     binding: "Alt+9"
+  - command: "focus workspace 10"
+    binding: "Alt+0"
 
   # Move focused workspace to a monitor in a given direction.
   - command: "move workspace left"
@@ -244,21 +250,44 @@ keybindings:
     binding: "Alt+S"
 
   # Move focused window to a workspace defined in `workspaces` config.
-  - commands: ["move to workspace 1", "focus workspace 1"]
+  # just move the focused window, don't change the workspace
+  - commands: ["move to workspace 1"]
     binding: "Alt+Shift+1"
-  - commands: ["move to workspace 2", "focus workspace 2"]
+  - commands: ["move to workspace 2"]
     binding: "Alt+Shift+2"
-  - commands: ["move to workspace 3", "focus workspace 3"]
+  - commands: ["move to workspace 3"]
     binding: "Alt+Shift+3"
-  - commands: ["move to workspace 4", "focus workspace 4"]
+  - commands: ["move to workspace 4"]
     binding: "Alt+Shift+4"
-  - commands: ["move to workspace 5", "focus workspace 5"]
+  - commands: ["move to workspace 5"]
     binding: "Alt+Shift+5"
-  - commands: ["move to workspace 6", "focus workspace 6"]
+  - commands: ["move to workspace 6"]
     binding: "Alt+Shift+6"
-  - commands: ["move to workspace 7", "focus workspace 7"]
+  - commands: ["move to workspace 7"]
     binding: "Alt+Shift+7"
-  - commands: ["move to workspace 8", "focus workspace 8"]
+  - commands: ["move to workspace 8"]
     binding: "Alt+Shift+8"
-  - commands: ["move to workspace 9", "focus workspace 9"]
+  - commands: ["move to workspace 9"]
     bindings: ["Alt+Shift+9"]
+  - commands: ["move to workspace 10"]
+    bindings: ["Alt+Shift+0"]
+  # - commands: ["move to workspace 1", "focus workspace 1"]
+  #   binding: "Alt+Shift+1"
+  # - commands: ["move to workspace 2", "focus workspace 2"]
+  #   binding: "Alt+Shift+2"
+  # - commands: ["move to workspace 3", "focus workspace 3"]
+  #   binding: "Alt+Shift+3"
+  # - commands: ["move to workspace 4", "focus workspace 4"]
+  #   binding: "Alt+Shift+4"
+  # - commands: ["move to workspace 5", "focus workspace 5"]
+  #   binding: "Alt+Shift+5"
+  # - commands: ["move to workspace 6", "focus workspace 6"]
+  #   binding: "Alt+Shift+6"
+  # - commands: ["move to workspace 7", "focus workspace 7"]
+  #   binding: "Alt+Shift+7"
+  # - commands: ["move to workspace 8", "focus workspace 8"]
+  #   binding: "Alt+Shift+8"
+  # - commands: ["move to workspace 9", "focus workspace 9"]
+  #   bindings: ["Alt+Shift+9"]
+  # - commands: ["move to workspace 10", "focus workspace 10"]
+  #   bindings: ["Alt+Shift+0"]
