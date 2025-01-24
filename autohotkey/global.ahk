@@ -29,3 +29,8 @@
   Run "chrome.exe /new-window file:///C:/Users/AAytac/.config/autohotkey/help/shotcuts.html"
   return
 }
+
+#t::{
+  Run "chrome.exe /new-window file:///C:/Users/AAytac/projects/todos/index.html"
+  return
+}
