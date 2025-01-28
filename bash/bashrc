@@ -1,11 +1,9 @@
 # VARS
-node_location="~/bin/node-v22.13.1-win-x64"
-nvim="~/bin/nvim-win64/bin/nvim.exe"
 
 # ALIASES
 
-alias v="$nvim"
-alias 'v.'="$nvim ."
+alias v="nvim"
+alias 'v.'="nvim ."
 
 alias q="exit"
 alias ':q'="exit"
@@ -16,17 +14,11 @@ alias '..'="cd .."
 alias '...'="cd ../.."
 alias '....'="cd ../../.."
 
-alias node="$node_location/node.exe"
-alias npm="$node_location/npm"
-alias npx="$node_location/npx"
-
 # VARS
 
 
 # APPS
 
-# NVM doesn't work as security is blocking the listing and downloading of node versions
-# so this tool becomes useless...
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
