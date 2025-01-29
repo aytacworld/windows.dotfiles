@@ -21,7 +21,7 @@
   - [TODO] zebar configuration
   - copy shortcut to shell:startup to open glazewm on startup
 6. Install neovim
-  - in terminal `scoop install neovim vcredist2022 zig`
+  - in terminal `scoop install neovim vcredist2022 zig fd ripgrep`
   - symlink config `ln -s ~/.config/nvim ~/AppData/Local/nvim`
 7. Install nvm
   - goto https://github.com/nvm-sh/nvm and execute command to install nvm
