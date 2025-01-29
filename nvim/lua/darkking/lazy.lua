@@ -14,7 +14,7 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Installing other plugins using PluginManager
 return require("lazy").setup({
-  { 'nvim-telescope/telescope.nvim', tag = '0.1.4', dependencies = { 'nvim-lua/plenary.nvim' } },
+  { 'nvim-telescope/telescope.nvim', tag = '0.1.8', dependencies = { 'nvim-lua/plenary.nvim' } },
   { 'folke/tokyonight.nvim', name = 'tokyonight' },
   { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' },
   { 'theprimeagen/harpoon' },
@@ -22,7 +22,7 @@ return require("lazy").setup({
   { 'tpope/vim-fugitive' },
   {'williamboman/mason.nvim'},
   {'williamboman/mason-lspconfig.nvim'},
-  {'VonHeikemen/lsp-zero.nvim', branch = 'v3.x'},
+  {'VonHeikemen/lsp-zero.nvim', branch = 'v4.x'},
   {'neovim/nvim-lspconfig'},
   {'hrsh7th/cmp-nvim-lsp'},
   {'hrsh7th/nvim-cmp'},

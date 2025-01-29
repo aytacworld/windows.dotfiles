@@ -4,6 +4,9 @@ require('telescope').setup({
     defaults = {
         file_ignore_patterns = {
             "lazy%-lock.json",
+            ".angular/*",
+            "node_modules/*",
+            ".git/*",
         }
     }
 });
