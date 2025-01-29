@@ -1,35 +1,40 @@
-# Dotfiles on Windows 10
+# Dotfiles on Windows 10/11
 
-## Installed Apps
+## Steps
 
-- AutoHotKey (Bind custom keys): https://www.autohotkey.com/
+1. Make git-bash the default editor
+  - Make sure Git for Windows is installed, if not complain hard about it and
+    annoy the shit about it.
+2. Clone repo as config folder 
+  - `git clone https://github.com/aytacworld/windows.dotfiles ~/.config`
+3. Point to bash file
+  - `echo ". ~/.config/bash/bashrc" > ~/.bash_profile`
+  - restart terminal
+4. Install scoop and all apps
+  - goto https://scoop.sh and execute commands to install scoop
+  - in terminal `scoop update`
+  - add extras bucket `scoop bucket add extras`
+5. Install glazewm (and zebar)
+  - in terminal `scoop install glazewm zebar`
+  - `mkdir ~/.glzr`
+  - symlink config `ln -s ~/.config/glazewm ~/.glzr/glazewm`
+  - [TODO] zebar configuration
+  - copy shortcut to shell:startup to open glazewm on startup
+6. Install neovim
+  - in terminal `scoop install neovim vcredist2022 zig`
+  - symlink config `ln -s ~/.config/nvim ~/AppData/Local/nvim`
+7. Install nvm
+  - goto https://github.com/nvm-sh/nvm and execute command to install nvm
 
-## Installed Apps (not really installed, but executables downloaded and $PATH
-## variable pointed at. (those installations will also work on git-bash
+## Some custom things
 
-- bash
-  - to correctly use PATH, and create other systemvariables, execute this
-    script using git-bash `echo "test -f ~/.config/bash/bashrc && . ~/.config/bash/bashrc" > ~/.bashrc`
-    this will create bashrc file that points to the rc file in this repo
-- neovim
-  - copy nvim folder to ~/AppData/Local/nvim
-- node v22.13.1 (lts)
-
-## Not working (after security policies and vpn configurations...) Apps
-
-- Scoop (Command-line installer for Windows): https://scoop.sh/
-<!-- - Komorebi (window tiling manager): https://github.com/LGUG2Z/komorebi -->
-- Yasb (status bar): https://github.com/denBot/yasb
-- GlazeWM (window tiling manager and status bar): https://github.com/glzr-io/glazewm/
-
-## Installed from Microsoft Store or from github
-- Windows Terminal: https://github.com/microsoft/terminal
-- PowerShell: https://github.com/PowerShell/PowerShell
-<!-- - Ubuntu (WSL): https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10 -->
-<!-- - Python(v3.10): https://www.python.org/downloads/release/python-31011/ -->
-<!-- - Font Awesome 5 Free: https://fontawesome.com/v5/download (desktop version) -->
-
-## Startup files
-- Open start+r, then type "shell:startup", copy files in startup_folder.
-__Make sure path and usernames are correct in the shortcuts__
+1. bash
+  The config contains some simple aliases (similar to zsh/oh-my-zsh)
+    - `l` will list, `..`, `...`, `....` will cd to parent folders 
+    - `v` is shortcut for nvim, `q` or `:q` is shortcut for `exit`
+2. glazewm
+  Contains some extra shortcuts
+    - leftWin+enter will open wt instead of cmd (wt defaults to git-bash)
+    - leftWin+b will open chrome
+    - leftWin+o will open screenshot tool on selection mode
 
