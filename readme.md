@@ -16,11 +16,11 @@
   - add extras bucket `scoop bucket add extras`
 5. Install glazewm (and zebar)
   - in terminal `scoop install glazewm zebar`
+  - make glzr folder for glazewm errorlogs and zebar configs `mkdir -p ~/.glzr`
   - set environment variable `setx GLAZEWM_CONFIG_PATH "$HOME\.config\glazewm\config.yaml`
     - if setting env variable doesn't work, just copy past do the following
-      - make default glzr folder `mkdir -p ~/.glzr/`
       - copy the config folder `cp -R ~/.config/glazewm ~/.glzr/glazewm`
-  - [TODO] zebar configuration
+  - copy zebar config `cp -R ~/.config/zebar ~/.glzr/zebar`
   - copy shortcut to shell:startup to open glazewm on startup
 6. Install neovim
   - in terminal `scoop install neovim vcredist2022 zig fd ripgrep`
@@ -42,3 +42,6 @@
 3. Symlinking
   This doesn't work on Windows, or I didn't manage to set it up correctly,
   so just copy paste the config folder to the correct place.
+4. zebar
+  webfont.css is just downloaded from https://www.nerdfonts.com/assets/css/webfonts.css,
+  actual font file(.woff2) is also downloaded. As those urls are blocked by security.
