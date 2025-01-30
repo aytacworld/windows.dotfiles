@@ -16,13 +16,15 @@
   - add extras bucket `scoop bucket add extras`
 5. Install glazewm (and zebar)
   - in terminal `scoop install glazewm zebar`
-  - `mkdir ~/.glzr`
-  - symlink config `ln -s ~/.config/glazewm ~/.glzr/glazewm`
+  - set environment variable `setx GLAZEWM_CONFIG_PATH "$HOME\.config\glazewm\config.yaml`
+    - if setting env variable doesn't work, just copy past do the following
+      - make default glzr folder `mkdir -p ~/.glzr/`
+      - copy the config folder `cp -R ~/.config/glazewm ~/.glzr/glazewm`
   - [TODO] zebar configuration
   - copy shortcut to shell:startup to open glazewm on startup
 6. Install neovim
   - in terminal `scoop install neovim vcredist2022 zig fd ripgrep`
-  - symlink config `ln -s ~/.config/nvim ~/AppData/Local/nvim`
+  - copy config folder `cp -R ~/.config/nvim ~/AppData/Local/nvim`
 7. Install nvm
   - goto https://github.com/nvm-sh/nvm and execute command to install nvm
 
@@ -37,4 +39,6 @@
     - leftWin+enter will open wt instead of cmd (wt defaults to git-bash)
     - leftWin+b will open chrome
     - leftWin+o will open screenshot tool on selection mode
-
+3. Symlinking
+  This doesn't work on Windows, or I didn't manage to set it up correctly,
+  so just copy paste the config folder to the correct place.
