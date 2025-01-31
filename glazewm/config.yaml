@@ -99,7 +99,7 @@ window_behavior:
       centered: true
 
       # Whether to show floating windows as always on top.
-      shown_on_top: false
+      shown_on_top: true
 
     fullscreen:
       # Maximize the window if possible. If the window doesn't have a
@@ -137,6 +137,9 @@ window_rules:
         window_title: { regex: '.*? - Peek' }
       - window_process: { equals: 'Lively' }
         window_class: { regex: 'HwndWrapper' }
+
+      - window_title: { regex: 'Herinneringen' }
+      - window_process: { equals: 'SnippingTool' }
   - commands: ['move --workspace 6']
     match:
       - window_process: { equals: 'ms-teams' }

@@ -5,6 +5,8 @@
 1. Make git-bash the default editor
   - Make sure Git for Windows is installed, if not complain hard about it and
     annoy the shit about it.
+2. Disable flickering on pressing tab
+  - copy inputrc file `cp ~/.config/bash/.inputrc ~/.inputrc`
 2. Clone repo as config folder 
   - `git clone https://github.com/aytacworld/windows.dotfiles ~/.config`
 3. Point to bash file
