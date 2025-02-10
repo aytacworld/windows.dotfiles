@@ -143,6 +143,8 @@ window_rules:
   - commands: ['move --workspace 6']
     match:
       - window_process: { equals: 'ms-teams' }
+  - commands: ['move --workspace 7']
+    match:
       - window_process: { regex: 'olk' } # outlook
 
 binding_modes:
@@ -222,7 +224,7 @@ keybindings:
 
   # Change the focused window to be fullscreen.
   - commands: ['toggle-fullscreen']
-    bindings: ['alt+f']
+    bindings: ['lwin+f']
 
   # Minimize focused window.
   - commands: ['toggle-minimized']
@@ -277,13 +279,13 @@ keybindings:
   # Move the focused window's parent workspace to a monitor in a given
   # direction.
   - commands: ['move-workspace --direction left']
-    bindings: ['alt+shift+a']
+    bindings: ['alt+a']
   - commands: ['move-workspace --direction right']
-    bindings: ['alt+shift+f']
+    bindings: ['alt+f']
   - commands: ['move-workspace --direction up']
-    bindings: ['alt+shift+d']
+    bindings: ['alt+d']
   - commands: ['move-workspace --direction down']
-    bindings: ['alt+shift+s']
+    bindings: ['alt+s']
 
   # Move focused window to a workspace defined in `workspaces` config.
   # just move the focused window, don't change the workspace focus!
