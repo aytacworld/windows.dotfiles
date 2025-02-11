@@ -29,4 +29,6 @@ return require("lazy").setup({
   {'L3MON4D3/LuaSnip'},
   {'folke/which-key.nvim'},
   {'tpope/vim-commentary'},
+  { 'nvim-tree/nvim-web-devicons' },
+  { 'echasnovski/mini.icons', version = '*' },
 })
