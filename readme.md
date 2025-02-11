@@ -12,10 +12,11 @@
 4. Point to bash file
     - `echo ". ~/.config/bash/bashrc" > ~/.bash_profile`
     - restart terminal
-5. Install scoop and all apps
+5. Install scoop and some apps
     - goto https://scoop.sh and execute commands to install scoop
     - in terminal `scoop update`
     - add extras bucket `scoop bucket add extras`
+    - install wget `scoop install wget`
 6. Install glazewm (and zebar)
     - in terminal `scoop install glazewm zebar`
     - make glzr folder for glazewm errorlogs and zebar configs `mkdir -p ~/.glzr`
@@ -24,11 +25,12 @@
             - copy the config folder `cp -R ~/.config/glazewm ~/.glzr/glazewm`
     - copy zebar config `cp -R ~/.config/zebar ~/.glzr/zebar`
     - copy shortcut to shell:startup to open glazewm on startup
-7. Install neovim
+7. Install nvm
+    - goto https://github.com/nvm-sh/nvm and execute command to install nvm
+8. Install neovim
     - in terminal `scoop install neovim vcredist2022 zig fd ripgrep`
     - copy config folder `cp -R ~/.config/nvim ~/AppData/Local/nvim`
-8. Install nvm
-    - goto https://github.com/nvm-sh/nvm and execute command to install nvm
+    - install node plugin `npm i -g neovim`
 
 ## Some custom things
 
@@ -50,3 +52,5 @@
 5. browser<br />
     Using MS Edge, as it wasn't possible to install another browser, so using the
     default installed browser.
+6. neomvim tree-sitter
+    Can't install this tool(using scoop), as it depends on 7zip, and it is blocked.
