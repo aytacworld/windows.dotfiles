@@ -10,7 +10,7 @@
 3.  Disable flickering on pressing tab
     - copy inputrc file `cp ~/.config/bash/.inputrc ~/.inputrc`
 4. Point to bash file
-    - `echo ". ~/.config/bash/bashrc" > ~/.bash_profile`
+    - `echo "source $HOME/.config/bash/bashrc" > ~/.bashrc`
     - restart terminal
 5. Install scoop and some apps
     - goto https://scoop.sh and execute commands to install scoop
