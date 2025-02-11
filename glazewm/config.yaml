@@ -314,8 +314,9 @@ keybindings:
   - commands: ['shell-exec wt']
     bindings: ['alt+enter', 'lwin+enter']
 
-  # Launch chrome
-  - commands: ['shell-exec chrome.exe']
+  # Launch browser
+  # - commands: ['shell-exec chrome.exe']
+  - commands: ['shell-exec msedge.exe']
     bindings: ['lwin+b']
 
   # Launch select-area to crop screenshot

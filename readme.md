@@ -47,3 +47,6 @@
 4. zebar<br />
     webfont.css is just downloaded from https://www.nerdfonts.com/assets/css/webfonts.css,
     actual font file(.woff2) is also downloaded. As those urls are blocked by security.
+5. browser<br />
+    Using MS Edge, as it wasn't possible to install another browser, so using the
+    default installed browser.
