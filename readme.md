@@ -54,3 +54,18 @@
     default installed browser.
 6. neomvim tree-sitter
     Can't install this tool(using scoop), as it depends on 7zip, and it is blocked.
+
+## Troubleshooting
+
+### nvm use <version> doesn't use the version
+
+If you installed nvm-windows, via github(https://github.com/coreybutler/nvm-windows)
+or scoop(scoop install nvm). It it possible that it doesn't work as intended.
+
+You can install nvm-sh(https://github.com/nvm-sh/nvm) using git-bash.
+1. open git-bash
+2. remove nvm-windows (if installed with scoop just execute `scoop uninstall nvm`)
+3. create bashrc file if it doesn't exists `touch ~/.bashrc`
+4. install nvm-sh `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash`
+5. restart git-bash OR source bashrc file by running `source ~/.bashrc`
+6. enjoy nvm
