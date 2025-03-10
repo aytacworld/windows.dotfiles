@@ -13,9 +13,12 @@ alias '...'="cd ../.."
 alias '....'="cd ../../.."
 
 # VARS
+config="$HOME/.config"
 
 
 # APPS
+
+alias s="$config/bin/s.sh"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
