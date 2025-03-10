@@ -4,7 +4,6 @@ if [[ "$1" == "clone" ]]; then
     repourl=$2
     foldername=$(echo "$repourl" | awk -F '/_git/' '{print $2}')
 
-    pass show open
     git clone "$repourl"
     echo $foldername
     cd "./$foldername"
@@ -28,7 +27,6 @@ previousBranch=$([[ ! -d $tempFolderName ]] \
 checkout () {
     echo $branch > $foldername
     git checkout $1
-    pass show open
     git pull
 }
 
@@ -38,8 +36,6 @@ commit () {
 }
 
 push () {
-    # this will unlock the pass database
-    pass show open
     [ ! -z "$1"  ] && git push -f && exit 0
     git push -u $remote $branch
 }
