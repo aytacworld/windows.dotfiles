@@ -12,12 +12,11 @@ general:
 
 gaps:
   scale_with_dpi: true
-  inner_gap: '2px'
   outer_gap:
-    top: '42px'
-    right: '2px'
-    bottom: '2px'
-    left: '2px'
+    top: '40px'
+    right: '0px'
+    bottom: '0px'
+    left: '0px'
 
 window_effects:
   focused_window:
