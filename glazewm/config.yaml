@@ -77,10 +77,10 @@ window_rules:
   # - commands: ['move --workspace 1']
   #   match:
   #     - window_process: { equals: 'msedge' }
-  - commands: ['move --workspace 6']
+  - commands: ['move --workspace 7']
     match:
       - window_process: { equals: 'ms-teams' }
-  - commands: ['move --workspace 7']
+  - commands: ['move --workspace 8']
     match:
       - window_process: { regex: 'olk' } # outlook
 
